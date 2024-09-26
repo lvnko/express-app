@@ -3,3 +3,10 @@
     - Lesson#001 : 框架介紹與 express.js 介紹 [/ wk-01-lesson-01](https://github.com/lvnko/express-app/tree/wk-01-lesson-01)
     - Lesson#002 : 靜態資源回傳
     - Lesson#003 : 渲染視圖模板
+
+## 有用資源連結
+- [Express.js API](https://expressjs.com/en/api.html)
+    - [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+    - [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
+    - [Common MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
