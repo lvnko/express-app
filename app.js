@@ -28,6 +28,13 @@ app.get('/getHtml', (req, res)=>{
     });
 });
 
+app.get('/getImage', (req, res)=>{
+    const absolutePath = path.join(__dirname, "/files/image/237-536x354.jpg");
+    res.sendFile(absolutePath, (err)=>{
+        console.log(`Error on reading file...: `, err);
+    });
+});
+
 app.get('/*', (req, res)=> {
     res.send('Nothing Found!');
 });
