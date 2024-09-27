@@ -13,4 +13,5 @@
     - [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
     - [Common MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 - 專案使用到的 Node 套件
-    - Template Engine [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+    - Template Engine : [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+        - Handlerbars : [Expressions Usage](https://handlebarsjs.com/guide/expressions.html)

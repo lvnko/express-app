@@ -3,6 +3,9 @@ const app = express();
 const path = require("path");
 const exphbs = require("express-handlebars");
 
+// 置入 articles data.
+const articles = require("./data/articles");
+
 // 設定樣板引擎
 app.engine('handlebars', exphbs.engine());
 // 設定網站 預設執行樣版引擎的副檔名
@@ -16,9 +19,18 @@ app.get('/', (req, res)=> {
     res.render("home");
 });
 
-// 回傳文字訊息 or HTML tag
+// 單篇文章
+app.get('/articles/:id', (req, res)=> {
+    const id = req.params.id;
+    res.render("article", {
+        article: articles[id],
+        backUrl: '/articles'
+    });
+});
+
+// 文章列表
 app.get('/articles', (req, res)=> {
-    res.render("articles");
+    res.render("articles", { articles: articles });
 });
 
 app.get('/about', (req, res)=> {
