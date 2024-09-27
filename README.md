@@ -7,6 +7,10 @@
 ## 有用資源連結
 - [Express.js API](https://expressjs.com/en/api.html)
     - [Serving static files in Express](https://expressjs.com/en/starter/static-files.html)
+    - [Simple Guide about template engines](https://expressjs.com/en/guide/using-template-engines.html)
+    - [Express examples](https://github.com/expressjs/express/tree/master/examples)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
     - [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)
     - [Common MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+- 專案使用到的 Node 套件
+    - Template Engine [express-handlebars](https://www.npmjs.com/package/express-handlebars)
