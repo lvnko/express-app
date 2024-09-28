@@ -1,24 +1,27 @@
-<h1>Reprehenderit voluptate dolor ea, Nulla!</h1>
-{{#each articles}}
-    {{#if this.publish}}
-        <section class="article">
-            {{#with this}}
-                <h3>
-                    <a href={{url}}>Go to page ⮕</a>
-                </h3>
-                <h2 class="article-title">
-                    {{key}}{{title}}
-                </h2>
-                <h3 class="article-subTitle">
-                    {{subTitle}}
-                </h3>
-                <h4 class="article-date">
-                    {{date}}
-                </h4>
-                {{!-- <p class="article-content">
-                    {{content}}
-                </p> --}}
-            {{/with}}
-        </section>
-    {{/if}}
-{{/each}}
+<h2>Articles</h2>
+<div class="articles-container">
+    {{#each articles}}
+        {{#if this.publish}}
+            <section class="article">
+                {{#with this}}
+                    <div class="article-thumbnail">
+                        <img src={{image}} />
+                        <h5 class="article-title">
+                            {{key}}{{title}}
+                        </h5>
+                    </div>
+                    <p class="article-subTitle">
+                        {{subTitle}}
+                    </p>
+                    <p class="article-date txt-sm">
+                        {{date}}
+                    </p>
+                    <a class="button-link" href={{url}}>Go to page ⮕</a>
+                    {{!-- <p class="article-content">
+                        {{content}}
+                    </p> --}}
+                {{/with}}
+            </section>
+        {{/if}}
+    {{/each}}
+</div>

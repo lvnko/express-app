@@ -1,18 +1,24 @@
 <section class="article">
-    <h3><a href={{backUrl}}>⬅ Go back</a></h3>
-    <br/>
     {{#with article}}
-        <h2 class="article-title">
-            {{key}}{{title}}
-        </h2>
-        <h3 class="article-subTitle">
-            {{subTitle}}
-        </h3>
-        <h4 class="article-date">
-            {{date}}
-        </h4>
-        <p class="article-content">
-            {{content}}
-        </p>
+        <div class="row-heading">
+            <a class="button-link txt-md" href={{../backUrl}}>⬅ Go back</a>
+            <div class="col-heading">
+                <h2 class="article-title">
+                    {{key}}{{title}}
+                </h2>
+                <p>{{date}}</p>
+            </div>
+        </div>
+        <div class="row-content">
+            <div class="col-content">
+                <img class="article-image" src={{image}} />
+                <h5 class="article-subTitle">
+                    {{subTitle}}
+                </h5>
+                <p class="article-content">
+                    {{content}}
+                </p>
+            </div>
+        </div>
     {{/with}}
 </section>

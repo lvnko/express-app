@@ -10,7 +10,8 @@ for (let i = 0; i < 20; i++) {
         publish: [true, false][
             Math.floor(Math.random() * [true, false].length)
         ],
-        url: `articles/${i}`
+        url: `articles/${i}`,
+        image: `/static/image/article-img-${i}.jpg`
     });
 }
 
