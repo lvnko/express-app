@@ -150,8 +150,9 @@ main .main-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     row-gap: 1.5rem;
+    column-gap: calc(5.5% / 2);
 }
 
 .articles-container section.article {
@@ -289,4 +290,24 @@ main .main-container {
 
 .article .row-heading .button-link:hover {
     color: var(--color-text-link-hover);
+}
+
+/*
+    "ty": 593,
+    "sm": 782,
+    "md": 952,
+    "lg": 1040,
+    "fw": 1274,
+    "fhd": 1700,
+    "2k": 2056,
+    "4k": 3060
+*/
+
+@media screen and (min-width: 1274px) {
+    .articles-container {
+        column-gap: calc(6% / 3);
+    }
+    .articles-container section.article {
+        flex-basis: 23.5%;
+    }
 }

@@ -37,6 +37,10 @@ app.get('/about', (req, res)=> {
     res.render("about");
 });
 
+app.get('/login', (req, res)=> {
+    res.render("login");
+});
+
 app.get('/txt', (req, res)=>{
     const absolutePath = path.join(__dirname, "/files/test.txt");
     res.sendFile(absolutePath, (err)=>{
