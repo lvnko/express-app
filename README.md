@@ -3,6 +3,10 @@
     - Lesson#001 : 框架介紹與 express.js 介紹 / [wk-01-lesson-01](https://github.com/lvnko/express-app/tree/wk-01-lesson-01)
     - Lesson#002 : 靜態資源回傳 / [wk-01-lesson-02](https://github.com/lvnko/express-app/tree/wk-01-lesson-02)
     - Lesson#003 : 渲染視圖模板 / [wk-01-lesson-03](https://github.com/lvnko/express-app/tree/wk-01-lesson-03)
+- Week#002 : JS：後端框架與 API 開發（下）[wk-02](https://github.com/lvnko/express-app/tree/wk-02)
+    - Lesson#001 : 路由設定與管理 [wk-02-lesson-01](https://github.com/lvnko/express-app/tree/wk-02)
+    - Lesson#002 : middleware 設定與管理
+    - Lesson#003 : rest api
 
 ## 有用資源連結
 - [Express.js API](https://expressjs.com/en/api.html)
