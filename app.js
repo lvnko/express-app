@@ -9,8 +9,13 @@ app.engine('handlebars', exphbs.engine());
 // 設定網站 預設執行樣版引擎的副檔名
 app.set('view engine', 'handlebars');
 
-// Logger
+// parse req.body
+app.use(express.json());
+app.use(express.urlencoded(
+    { extended: false }
+));
 
+// Logger
 const logger = (req, res, next) => {
 
     const datetime = new Date();

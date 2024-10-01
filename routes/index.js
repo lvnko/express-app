@@ -25,7 +25,7 @@ router.get('/', (req, res)=> {
 });
 
 router.get('/about', (req, res)=> {
-    throw new Error("Somethig's wrong!");
+    // throw new Error("Somethig's wrong!");
     res.render("about");
 });
 
@@ -37,6 +37,9 @@ router.use('/file', require("./file"));
 
 // 使用 auth router
 router.use('/auth', require("./auth"));
+
+// 使用 api router
+router.use('/api', require("./api"));
 
 router.get('/*', (req, res)=> {
     res.send('Nothing Found!');
